@@ -1,3 +1,4 @@
+"修改<leader>键
 let mapleader=","
 "Vim-Plug插件配置
 call plug#begin('~/.vim/plugged')
@@ -85,6 +86,7 @@ set clipboard=unnamed
 "复制时不带行号
 se mouse+=a
 
+"增加全选，回到开始，回到末尾
 map <leader>sa ggVG"
 map <F1> gg
 map <F2> G
