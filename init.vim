@@ -83,3 +83,10 @@ set clipboard=unnamed
 
 "复制时不带行号
 se mouse+=a
+
+map <leader>sa ggVG"
+
+cnoremap <C-j> <t_kd>
+cnoremap <C-k> <t_ku>
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>

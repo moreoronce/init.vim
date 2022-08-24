@@ -43,7 +43,6 @@ syntax on
 " 代码颜色主题
 set t_Co=256
 colorscheme gruvbox
-set Font-size=11
 
 " 在右下角显示部分命令
 set showcmd
@@ -71,4 +70,4 @@ let NERDTreeShowBookmarks=1
 let g:NERDTreeHidden=1
 let NERDTreeIgnore = ['\.pyc$', '\.swp', '\.swo', '\.vscode', '__pycache__']
 
-set guifont="JetBrainsMono Nerd Font Mono"
+set guifont="JetBrainsMono Nerd Font Mono:10"
