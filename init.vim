@@ -1,3 +1,4 @@
+"Vim-Plug插件配置
 call plug#begin('~/.vim/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'itchyny/lightline.vim'
@@ -11,6 +12,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'preservim/nerdtree'
 	Plug 'morhetz/gruvbox'
 call plug#end()
+"插件配置
 set nocompatible
 set backspace=eol,start,indent
 set number
@@ -55,17 +57,19 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+"NerdTree相关配置
 map <F3> :NERDTreeMirror<CR>
 map <F3> :NERDTreeToggle<CR>
 let NERDTreeShowBookmarks=1
 let g:NERDTreeHidden=1
 let NERDTreeIgnore = ['\.pyc$', '\.swp', '\.swo', '\.vscode', '__pycache__']
 
-
+"statusline配置
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+"syntastic相关配置
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
@@ -74,6 +78,7 @@ let g:syntastic_check_on_wq = 0
 map <leader>p :Files<CR>
 map <leader>b :Buffers<CR>
 
+"Windows公用剪贴板
 set clipboard=unnamed
 
 "复制时不带行号

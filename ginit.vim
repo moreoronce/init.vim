@@ -43,6 +43,7 @@ syntax on
 " 代码颜色主题
 set t_Co=256
 colorscheme gruvbox
+set Font-size=11
 
 " 在右下角显示部分命令
 set showcmd
