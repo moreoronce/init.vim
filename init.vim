@@ -7,12 +7,12 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-surround'
     Plug 'vim-syntastic/syntastic'
     Plug 'jistr/vim-nerdtree-tabs'
-	Plug 'mhinz/vim-startify'
+    Plug 'mhinz/vim-startify'
     Plug 'tomlion/vim-solidity'
-	Plug 'junegunn/fzf'
-	Plug 'junegunn/fzf.vim'
+    Plug 'junegunn/fzf'
+    Plug 'junegunn/fzf.vim'
     Plug 'preservim/nerdtree'
-	Plug 'morhetz/gruvbox'
+    Plug 'morhetz/gruvbox'
 call plug#end()
 "插件配置
 set nocompatible
