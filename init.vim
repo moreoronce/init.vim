@@ -1,5 +1,6 @@
 "修改<leader>键
 let mapleader=","
+
 "Vim-Plug插件配置
 call plug#begin('~/.vim/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -14,6 +15,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'preservim/nerdtree'
     Plug 'morhetz/gruvbox'
 call plug#end()
+
 "插件配置
 set nocompatible
 set backspace=eol,start,indent
