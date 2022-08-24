@@ -1,3 +1,4 @@
+let mapleader=","
 "Vim-Plug插件配置
 call plug#begin('~/.vim/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -85,11 +86,5 @@ set clipboard=unnamed
 se mouse+=a
 
 map <leader>sa ggVG"
-
-cnoremap <C-j> <t_kd>
-cnoremap <C-k> <t_ku>
-cnoremap <C-A> <Home>
-cnoremap <C-e> <End>
-
-let mapleader = ','
-let g:mapleader = ','
+map <F1> gg
+map <F2> G
