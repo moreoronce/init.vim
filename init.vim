@@ -5,11 +5,14 @@ let mapleader = ","
 "Vim-Plug插件配置
 call plug#begin('~/.vim/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'itchyny/lightline.vim'
+    Plug 'ervandew/supertab'
+    Plug 'glepnir/spaceline.vim'
+    " Use the icon plugin for better behavior
+    Plug 'ryanoasis/vim-devicons' 
     Plug 'tpope/vim-surround'
     Plug 'jistr/vim-nerdtree-tabs'
     Plug 'mhinz/vim-startify'
-    Plug 'junegunn/fzf'
+    Plug 'junegunn/fzf' , { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'preservim/nerdtree'
     Plug 'morhetz/gruvbox'
@@ -72,13 +75,7 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-"syntastic相关配置
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-map <leader>p :Files<CR>
+map <leader>p :Files $HOMEPATH<CR>
 map <leader>b :Buffers<CR>
 
 "Windows公用剪贴板
