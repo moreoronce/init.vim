@@ -7,6 +7,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'ervandew/supertab'
     Plug 'glepnir/spaceline.vim'
+    Plug 'Neur1n/neuims'
     " Use the icon plugin for better behavior
     Plug 'ryanoasis/vim-devicons' 
     Plug 'tpope/vim-surround'
@@ -95,3 +96,13 @@ map <F2> G
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
 
+" neuims default and manually control
+nnoremap <silent> <leader>is :call neuims#Switch()<CR>
+let s:win = {
+      \ 'im': 'US Keyboard',
+      \ 'status': 0,
+      \ 'keyboards': {
+      \   'US Keyboard': 0x0409,
+      \   'Microsoft Pinyin': 0x0804,
+      \ },
+      \ }
