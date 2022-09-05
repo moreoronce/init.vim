@@ -73,7 +73,7 @@ let NERDTreeIgnore = ['\.pyc$', '\.swp', '\.swo', '\.vscode', '__pycache__']
 
 "statusline配置
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 map <leader>p :Files $HOMEPATH<CR>
@@ -89,8 +89,7 @@ se mouse+=a
 map <leader>sa ggVG"
 map <F1> gg
 map <F2> G
-
-
+nnoremap <C-p> "+p
 " Applying codeAction to the selected region.
 " Example: `<leader>aap` for current paragraph
 xmap <leader>a  <Plug>(coc-codeaction-selected)
