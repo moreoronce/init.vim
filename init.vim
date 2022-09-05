@@ -81,6 +81,8 @@ map <leader>b :Buffers<CR>
 
 "Windows公用剪贴板
 set clipboard=unnamed
+nnoremap <C-p> "+p
+vnoremap <C-y> "+y
 
 "复制时不带行号
 se mouse+=a
@@ -89,7 +91,7 @@ se mouse+=a
 map <leader>sa ggVG"
 map <F1> gg
 map <F2> G
-nnoremap <C-p> "+p
+
 " Applying codeAction to the selected region.
 " Example: `<leader>aap` for current paragraph
 xmap <leader>a  <Plug>(coc-codeaction-selected)
