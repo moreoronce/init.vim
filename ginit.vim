@@ -9,4 +9,10 @@ if exists('g:GuiLoaded')
   GuiPopupmenu 0
   GuiLinespace 2
 endif
+if exists("g:neovide")
+    " Put anything you want to happen only in Neovide here
+    let g:neovide_remember_window_size = v:true
+    let g:neovide_hide_mouse_when_typing = v:false
+endif
+set guifont=JetBrainsMonoMedium\ NF:h9
 source $HOME/.vim/ginit.vim 
