@@ -107,3 +107,5 @@ let s:win = {
       \   'Microsoft Pinyin': 0x0804,
       \ },
       \ }
+let g:python_host_skip_check=1
+let g:python3_host_skip_check=1
