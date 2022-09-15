@@ -6,12 +6,15 @@ let mapleader = ","
 call plug#begin('~/.vim/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'ervandew/supertab'
-    Plug 'glepnir/spaceline.vim'
+    Plug 'itchyny/lightline.vim'
+    Plug 'mengelbrecht/lightline-bufferline'
+    "Plug 'glepnir/spaceline.vim'
     Plug 'Neur1n/neuims'
     " Use the icon plugin for better behavior
     Plug 'ryanoasis/vim-devicons' 
     Plug 'tpope/vim-surround'
-    Plug 'jistr/vim-nerdtree-tabs'
+    Plug 'jistr/vim-nerdtree-tabs', {'on': 'NERDTreeToggle'}
+    Plug 'dstein64/vim-startuptime'
     Plug 'mhinz/vim-startify'
     Plug 'junegunn/fzf' , { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
@@ -72,9 +75,26 @@ let g:NERDTreeHidden=1
 let NERDTreeIgnore = ['\.pyc$', '\.swp', '\.swo', '\.vscode', '__pycache__']
 
 "statusline配置
-set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+""set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+
+let g:lightline = {
+      \ 'component_function': {
+      \   'filename': 'LightlineFilename',
+      \ },
+      \ }
+
+function! LightlineFilename()
+  return &filetype ==# 'vimfiler' ? vimfiler#get_status_string() :
+        \ &filetype ==# 'unite' ? unite#get_status_string() :
+        \ &filetype ==# 'vimshell' ? vimshell#get_status_string() :
+        \ expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
+endfunction
+
+let g:unite_force_overwrite_statusline = 0
+let g:vimfiler_force_overwrite_statusline = 0
+let g:vimshell_force_overwrite_statusline = 0
 
 map <leader>p :Files $HOMEPATH<CR>
 map <leader>b :Buffers<CR>
