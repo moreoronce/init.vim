@@ -12,6 +12,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'Neur1n/neuims'
     " Use the icon plugin for better behavior
     Plug 'ryanoasis/vim-devicons' 
+    Plug 'tomlion/vim-solidity'
     Plug 'tpope/vim-surround'
     Plug 'jistr/vim-nerdtree-tabs', {'on': 'NERDTreeToggle'}
     Plug 'dstein64/vim-startuptime'
