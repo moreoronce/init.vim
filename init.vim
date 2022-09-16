@@ -73,7 +73,8 @@ set noswapfile
 map <F3> :NERDTreeMirror<CR>
 map <F3> :NERDTreeToggle<CR>
 let NERDTreeShowBookmarks=0
-let g:NERDTreeHidden=0
+let g:NERDTreeHidden=1
+let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.pyc$', '\.swp', '\.swo', '\.vscode', '__pycache__']
 
 "statusline配置
