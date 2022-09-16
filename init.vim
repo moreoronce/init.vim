@@ -77,11 +77,6 @@ let g:NERDTreeHidden=1
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.pyc$', '\.swp', '\.swo', '\.vscode', '__pycache__']
 
-"statusline配置
-"set statusline+=%#warningmsg#
-""set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
-
 let g:lightline = {
       \ 'component_function': {
       \   'filename': 'LightlineFilename',

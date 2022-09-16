@@ -14,5 +14,5 @@ if exists("g:neovide")
     let g:neovide_remember_window_size = v:true
     let g:neovide_hide_mouse_when_typing = v:true
 endif
-set guifont=JetBrainsMonoMedium\ NF:h9
+set guifont=JetBrainsMono\ NF:h9
 source $HOME/.vim/ginit.vim 
