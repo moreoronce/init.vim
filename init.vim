@@ -4,6 +4,7 @@ let mapleader = ","
 
 "Vim-Plug插件配置
 call plug#begin('~/.vim/plugged')
+    Plug 'honza/vim-snippetsPlug'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'ervandew/supertab'
     Plug 'itchyny/lightline.vim'
